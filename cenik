@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FotoAteliér Záblesk - Ceník</title>
+</head>
+<body>
+
+    <!-- ⑥ Navigace -->
+    <nav>
+        <a href="index.html">Úvod</a> | 
+        <a href="cenik.html">Ceník služeb</a>
+    </nav>
+
+    <!-- ① Hlavní nadpis -->
+    <h1>Ceník fotografických služeb</h1>
+
+    <!-- ③ Tabulka služeb (Splňuje podmínku min. 5 řádků a hlavičku) -->
+    <section>
+        <h2>Nabízené balíčky</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Fotografická služba</th>
+                    <th>Cena balíčku</th>
+                    <th>Co balíček obsahuje</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mini portrét</td>
+                    <td>1 500 Kč</td>
+                    <td>5 upravených fotek, 30 minut focení</td>
+                </tr>
+                <tr>
+                    <td>Standardní rodinné focení</td>
+                    <td>2 500 Kč</td>
+                    <td>15 upravených fotek, 60 minut v exteriéru</td>
+                </tr>
+                <tr>
+                    <td>Těhotenské / New-born</td>
+                    <td>3 000 Kč</td>
+                    <td>20 upravených fotek, rekvizity v ceně</td>
+                </tr>
+                <tr>
+                    <td>Business portrét</td>
+                    <td>2 000 Kč</td>
+                    <td>3 profesionální fotky na LinkedIn, ateliér</td>
+                </tr>
+                <tr>
+                    <td>Svatba "Standard"</td>
+                    <td>15 000 Kč</td>
+                    <td>Celodenní focení (8 hodin), cca 300 fotek na USB</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- ⑦ Patička -->
+    <footer>
+        <p>© 2026 · web vytvořil 3</p>
+    </footer>
+
+</body>
+</html>

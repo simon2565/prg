@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FotoAteliér Záblesk - Úvodní stránka</title>
+</head>
+<body>
+
+    <!-- ⑥ Navigace -->
+    <nav>
+        <a href="index.html">Úvod</a> | 
+        <a href="cenik.html">Ceník služeb</a>
+    </nav>
+
+    <!-- ① Hlavní nadpis -->
+    <h1>FotoAteliér Záblesk</h1>
+
+    <!-- ② Sekce O nás -->
+    <section>
+        <h2>O nás</h2>
+        <p>Vítám vás v mém fotografickém světě, kde se zaměřuji na zachycení jedinečných emocí a neopakovatelných životních momentů. Specializuji se především na rodinné portréty, svatební momentky a profesionální exteriérové focení v přírodě. Každé focení pro mě představuje nový příběh, ke kterému přistupuji s maximální trpělivostí, individuální péčí a úsměvem. Mým cílem je, abyste se před objektivem cítili uvolněně a výsledné snímky vám dělaly radost po celý život.</p>
+    </section>
+
+    <!-- ④ Galerie (Obrázky si stáhni z Unsplash a ulož do složky obrazky/) -->
+    <section>
+        <h2>Portfolio</h2>
+        
+        <figure>
+            <img src="obrazky/rodina.jpg" alt="Šťastná rodina běžící po rozkvetlé letní louce" width="400">
+            <figcaption>Rodinná fotografie v přírodě</figcaption>
+        </figure>
+
+        <figure>
+            <img src="obrazky/svatba.jpg" alt="Novomanželé při západu slunce v objetí" width="400">
+            <figcaption>Svatební portrét novomanželů</figcaption>
+        </figure>
+
+        <figure>
+            <img src="obrazky/portret.jpg" alt="Detailní černobílý portrét usmívající se dívky" width="400">
+            <figcaption>Umělecký portrét v ateliéru</figcaption>
+        </figure>
+    </section>
+
+    <!-- ⑤ Kontakt -->
+    <section>
+        <h2>Kontakt</h2>
+        <p><strong>Adresa:</strong> Fotografická 123, 150 00 Praha 5 (Smyšlená adresa)</p>
+        <p><strong>Telefon:</strong> <a href="tel:+420777123456">777 123 456</a></p>
+        <p><strong>E-mail:</strong> <a href="mailto:info@foto-zablesk.cz">info@foto-zablesk.cz</a></p>
+        
+        <h3>Provozní doba</h3>
+        <ul>
+            <li>Pondělí - Pátek: 9:00 - 18:00</li>
+            <li>Sobota: Pouze svatby (dle domluvy)</li>
+            <li>Neděle: Zavřeno</li>
+        </ul>
+    </section>
+
+    <!-- ⑦ Patička (Zde přepiš KÓD ŽÁKA na svůj kód, např. IT2-07) -->
+    <footer>
+        <p>© 2026 · web vytvořil 3</p>
+    </footer>
+
+</body>
+</html>
 
