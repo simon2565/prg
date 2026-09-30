@@ -1,0 +1,275 @@
+/* --- ZÁKLADNÍ NASTAVENÍ STRÁNKY --- */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #F8F5F2; /* Krémové pozadí HopeRise */
+    color: #0C0A09;
+    line-height: 1.6;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+/* --- JEMNÉ ANIMACE PŘI NAČTENÍ STRÁNKY --- */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes posunNahoru {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animace-fade-in {
+    animation: fadeIn 1.2s ease forwards;
+}
+
+.animace-posun-nahoru {
+    animation: posunNahoru 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+/* --- NAVIGACE --- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    margin-bottom: 40px;
+}
+.logo {
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+}
+nav a {
+    color: #0C0A09;
+    text-decoration: none;
+    margin-left: 30px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: opacity 0.3s;
+}
+nav a:hover {
+    opacity: 0.5;
+}
+
+/* --- HERO SEKCE (Typografie HopeRise) --- */
+.hero-sekce {
+    padding: 60px 0 100px 0;
+    text-align: left;
+}
+.hlavni-nadpis {
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -2px;
+    margin-bottom: 24px;
+}
+
+/* Kruhový výřez na obrázek přímo uvnitř textu */
+.foto-kruh {
+    display: inline-flex;
+    width: 90px;
+    height: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+.foto-kruh img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.podnadpis {
+    font-size: 1.3rem;
+    max-width: 600px;
+    color: #4A4543;
+    margin-bottom: 40px;
+}
+
+/* --- SMOOTH TLAČÍTKA --- */
+.hero-akce {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.tlacitko-hlavni {
+    background-color: #00CC76; /* Výrazná zelená z HopeRise */
+    color: white;
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.3s;
+}
+.tlacitko-hlavni:hover {
+    background-color: #00B366;
+    transform: scale(1.05);
+}
+.tlacitko-vedlejsi {
+    color: #0C0A09;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: margin-left 0.3s;
+}
+.tlacitko-vedlejsi:hover {
+    margin-left: 5px;
+}
+
+/* --- PROSTOR A STRUKTURA OBSAHU --- */
+.sekce-obsah {
+    padding: 80px 0;
+    border-top: 1px solid #E5E2DF;
+}
+h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 40px;
+}
+.mrizka-dva-sloupce {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+.sloupec-text p {
+    font-size: 1.15rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Oprava velké fotky vedle textu */
+.sloupec-foto figure {
+    margin: 0;
+    width: 100%;
+}
+.sloupec-foto img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* --- MODERNÍ GALERIE --- */
+.galerie-kontejner {
+    display: flex;
+    gap: 30px;
+}
+.galerie-polozka {
+    margin: 0;
+    flex: 1;
+    overflow: hidden;
+    border-radius: 24px;
+}
+.galerie-polozka img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 24px;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.galerie-polozka:hover img {
+    transform: scale(1.04);
+}
+figcaption {
+    margin-top: 14px;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* --- STYL PRO TABULKU V CENÍKU --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+th, td {
+    padding: 20px 24px;
+    text-align: left;
+}
+th {
+    background-color: #0C0A09;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+tr {
+    border-bottom: 1px solid #E5E2DF;
+}
+tr:last-child {
+    border-bottom: none;
+}
+tr:hover {
+    background-color: #FBF9F7;
+}
+
+/* --- KONTAKTNÍ SEZNAM --- */
+.kontakt-odkaz {
+    color: #0C0A09;
+    text-decoration: underline;
+}
+.provozni-doba {
+    list-style-type: none;
+    padding-left: 0;
+}
+.provozni-doba li {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #E5E2DF;
+    max-width: 400px;
+}
+
+/* --- PATIČKA --- */
+footer {
+    margin-top: 100px;
+    padding: 40px 0;
+    border-top: 1px solid #E5E2DF;
+    opacity: 0.4;
+    font-size: 0.9rem;
+}
+
+/* Responsivita pro mobilní telefony */
+@media (max-width: 768px) {
+    .hlavni-nadpis { font-size: 3rem; }
+    .mrizka-dva-sloupce { grid-template-columns: 1fr; gap: 30px; }
+    .galerie-kontejner { flex-direction: column; }
+    .foto-kruh { display: none; }
+}
+/* OPRAVA ODSZENÍ TEXTU OD KRAJE OBRAZOVKY */
+body {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+/* Oprava zarovnání popisků pod fotkami, aby měly drobnou mezeru zleva */
+figcaption {
+    padding-left: 5px !important;
+    margin-top: 10px !important;
+}
+/* --- ZVÝŠENÍ OSTROSTI OBRÁZKŮ PŘI ZVĚTŠENÍ --- */
+img {
+    image-rendering: -webkit-optimize-contrast !important; /* Pro Chrome a Edge */
+    image-rendering: crisp-edges !important;              /* Pro Firefox */
+    transform: translateZ(0);                              /* Hardwarová akcelerace pro lepší vykreslení */
+    backface-visibility: hidden;
+}

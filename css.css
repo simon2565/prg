@@ -1,0 +1,127 @@
+/* Moderní smooth design inspirovaný předlohou HopeRise */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #F8F5F2; /* Jemné krémové pozadí */
+    color: #0C0A09; /* Elegantní tmavé písmo */
+    line-height: 1.7;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Čistá, minimalistická navigace */
+nav {
+    margin-bottom: 60px;
+    font-weight: 500;
+}
+nav a {
+    color: #0C0A09;
+    text-decoration: none;
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    transition: opacity 0.2s;
+}
+nav a:hover {
+    opacity: 0.6;
+}
+
+/* Výrazná typografie typická pro moderní weby */
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 40px;
+}
+h2 {
+    font-size: 1.8rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.1rem;
+    max-width: 700px;
+}
+
+/* Galerie se zaoblenými rohy */
+.galerie-kontejner {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+figure {
+    margin: 0;
+    flex: 1 1 250px;
+}
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 24px; /* Hladké zaoblené rohy */
+    display: block;
+    object-fit: cover;
+}
+figcaption {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: center;
+}
+
+/* Kontaktní sekce a seznamy */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #E5E2DF;
+    max-width: 400px;
+}
+a {
+    color: #0C0A09;
+    font-weight: 600;
+}
+
+/* Moderní čistá tabulka bez retro mřížky */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+}
+th, td {
+    padding: 18px 24px;
+    text-align: left;
+}
+th {
+    background-color: #0C0A09;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+tr {
+    border-bottom: 1px solid #E5E2DF;
+}
+tr:last-child {
+    border-bottom: none;
+}
+tr:hover {
+    background-color: #FBF9F7;
+}
+
+footer {
+    margin-top: 80px;
+    font-size: 0.85rem;
+    opacity: 0.5;
+    border-top: 1px solid #E5E2DF;
+    padding-top: 20px;
+}
