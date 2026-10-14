@@ -1,0 +1,282 @@
+```css
+/* Základní nastavení */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fb;
+    color: #1e293b;
+    line-height: 1.7;
+}
+
+/* Horní navigace */
+.hlavicka {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.navigace {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e293b;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #2563eb;
+}
+
+.odkazy {
+    display: flex;
+    gap: 25px;
+}
+
+.odkazy a {
+    color: #64748b;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.odkazy a:hover,
+.odkazy a.aktivni {
+    color: #2563eb;
+}
+
+/* Hlavní obsah */
+.kontejner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+/* Úvodní sekce */
+.uvod {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.stitky {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+    color: #0f172a;
+}
+
+.podnadpis {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #64748b;
+}
+
+/* Karty s otázkami */
+.dotazy {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.karta {
+    background-color: #ffffff;
+    padding: 25px;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.karta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+h2 {
+    font-size: 21px;
+    line-height: 1.4;
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+.karta p,
+.obrazek-sekce p {
+    color: #64748b;
+}
+
+.karta ol {
+    padding-left: 22px;
+    margin-top: 15px;
+}
+
+.karta li {
+    padding-left: 4px;
+    margin-bottom: 8px;
+}
+
+/* Ceník */
+.cenik {
+    margin-top: 45px;
+}
+
+.cenik h2 {
+    font-size: 28px;
+}
+
+.popis {
+    color: #64748b;
+    margin-bottom: 18px;
+}
+
+.tabulka {
+    overflow-x: auto;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 16px 20px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background-color: #eff6ff;
+    color: #1d4ed8;
+    font-size: 14px;
+}
+
+td {
+    color: #475569;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+/* Obrázek a kontakt */
+.obrazek-sekce {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+    margin-top: 45px;
+    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+}
+
+.obrazek {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.tlacitko {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 11px 20px;
+    background-color: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.tlacitko:hover {
+    background-color: #1d4ed8;
+}
+
+/* Patička */
+.paticka {
+    margin-top: 30px;
+    padding: 25px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-top: 1px solid #e2e8f0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.paticka a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.paticka a:hover {
+    text-decoration: underline;
+}
+
+/* Mobilní telefony a menší obrazovky */
+@media (max-width: 650px) {
+    .navigace {
+        flex-direction: column;
+    }
+
+    .odkazy {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .kontejner {
+        padding: 35px 16px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .dotazy {
+        grid-template-columns: 1fr;
+    }
+
+    .obrazek-sekce {
+        grid-template-columns: 1fr;
+        padding: 18px;
+    }
+
+    .obrazek {
+        height: 400px;
+    }
+
+    th,
+    td {
+        padding: 12px;
+    }
+}
