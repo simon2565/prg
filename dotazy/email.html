@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | PC Servis</title>
+    <link rel="stylesheet" href="css3.css">
+</head>
+<body>
+
+    <header class="hlavicka">
+        <nav class="navigace">
+            <div class="odkazy">
+                <a href="dotazy.html">Časté dotazy</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="kontakt-kontejner">
+
+        <section class="kontakt-uvod">
+            <p class="stitky">JSME TU PRO TEBE</p>
+            <h1>Napiš nám</h1>
+            <p>
+                Máš problém s počítačem nebo nějaký dotaz?
+                Vyplň formulář a připrav si zprávu pro náš servis.
+            </p>
+        </section>
+
+        <section class="kontakt-karta">
+
+            <form action="mailto:servis@example.com"
+                  method="post"
+                  enctype="text/plain">
+
+                <div class="formular-radek">
+                    <label for="jmeno">Tvoje jméno</label>
+                    <input
+                        type="text"
+                        id="jmeno"
+                        name="Jmeno"
+                        placeholder="Jan Novák"
+                        required
+                    >
+                </div>
+
+                <div class="formular-radek">
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="Email"
+                        placeholder="jan@email.cz"
+                        required
+                    >
+                </div>
+
+                <div class="formular-radek">
+                    <label for="predmet">Předmět</label>
+                    <select id="predmet" name="Predmet" required>
+                        <option value="" disabled selected>
+                            Vyber téma zprávy
+                        </option>
+                        <option>Oprava počítače</option>
+                        <option>Cenová nabídka</option>
+                        <option>Stav objednávky</option>
+                        <option>Jiný dotaz</option>
+                    </select>
+                </div>
+
+                <div class="formular-radek">
+                    <label for="zprava">Tvoje zpráva</label>
+                    <textarea
+                        id="zprava"
+                        name="Zprava"
+                        rows="6"
+                        placeholder="Napiš nám, s čím potřebuješ pomoct..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="tlacitko">
+                    Odeslat zprávu →
+                </button>
+
+            </form>
+
+        </section>
+
+        <p class="zpet">
+            <a href="dotazy.html">← Zpět na časté dotazy</a>
+        </p>
+
+    </main>
+
+    <footer class="paticka">
+        <p>&copy; 2026 PC Servis | Všechna práva vyhrazena</p>
+        <a href="mailto:servis@example.com">servis@example.com</a>
+    </footer>
+
+</body>
+</html>

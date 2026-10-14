@@ -109,7 +109,7 @@ h1 {
 
 .karta:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+    box-shadow: 0 10px 25px rgba(15, 1, 7, 0.342);
 }
 
 h2 {
@@ -215,11 +215,15 @@ tbody tr:hover {
     text-decoration: none;
     font-weight: bold;
     border-radius: 8px;
-    transition: background-color 0.2s;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out,
+                background-color 0.3s ease-in-out;
 }
 
 .tlacitko:hover {
     background-color: #1d4ed8;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(15, 1, 7, 0.342);
 }
 
 /* Patička */
@@ -278,5 +282,131 @@ tbody tr:hover {
     th,
     td {
         padding: 12px;
+    }
+}
+
+
+/*stranka email*/
+
+/* Kontaktní stránka */
+.kontakt-kontejner {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.kontakt-uvod {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.kontakt-uvod h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.kontakt-uvod p:last-child {
+    color: #64748b;
+}
+
+.kontakt-karta {
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05);
+}
+
+.formular-radek {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 22px;
+}
+
+.formular-radek label {
+    font-weight: 600;
+    color: #334155;
+}
+
+.formular-radek input,
+.formular-radek select,
+.formular-radek textarea {
+    width: 93%;
+    padding: 13px 15px;
+    font: inherit;
+    font-size: 15px;
+    color: #1e293b;
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.formular-radek input:focus,
+.formular-radek select:focus,
+.formular-radek textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.formular-radek textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.kontakt-karta .tlacitko {
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: inherit;
+    transition: transform 0.3s ease-in-out,
+                background-color 0.3s ease-in-out;
+}
+
+.kontakt-karta .tlacitko:hover {
+    transform: translateY(-5px);
+    background-color: #1d4ed8;
+}
+
+.zpet {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.zpet a {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 11px 20px;
+    background-color: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out,
+                background-color 0.3s ease-in-out;
+}
+
+.zpet a:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(15, 1, 7, 0.342);
+}
+
+@media (max-width: 650px) {
+    .kontakt-kontejner {
+        padding: 35px 16px;
+    }
+
+    .kontakt-uvod h1 {
+        font-size: 34px;
+    }
+
+    .kontakt-karta {
+        padding: 20px;
     }
 }
